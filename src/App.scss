@@ -1,0 +1,52 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+  /* stylelint-disable  */
+  --primary: #e21f40;
+  --primary-dark: #780002;
+  --secondary: ##50939d;
+  --secondary-dark: #012b35;
+  --white: #fff;
+  --black: #000;
+  /* stylelint-enable  */
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 32px;
+  --space-xl: 64px;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  letter-spacing: -0.1rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: var(--space-l) 0;
+  scroll-snap-align: start;
+
+  &.is-full {
+    max-width: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}

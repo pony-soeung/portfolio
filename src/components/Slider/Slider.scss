@@ -1,0 +1,47 @@
+/** @define Slider **/
+
+.Slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: var(--space-m);
+  list-style-type: none;
+  margin: 0;
+  -ms-overflow-style: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 var(--space-m);
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.Slider__item {
+  background-color: #fff;
+  border: 1px solid;
+  color: var(--black);
+  border-radius: 4px;
+  max-width: 320px;
+  padding: var(--space-m);
+  scroll-snap-align: center;
+  width: 75vw;
+}
+
+.Slider__logo {
+  height: 100px;
+  display: block;
+  object-fit: contain;
+  padding: 0 var(--space-m);
+}
+
+.Slider__listItem {
+  display: inline;
+  margin: 0;
+}
+
+.Slider__copyText {
+  display: none;
+}

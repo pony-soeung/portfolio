@@ -1,0 +1,83 @@
+/** @define Header **/
+
+.Header {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  height: 100vh;
+  position: relative;
+
+  &::before {
+    background: rgba(#000, 0.6);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.Header__content {
+  margin: auto auto 0;
+  padding: var(--space-xl) 0;
+  position: relative;
+}
+
+.Header__title {
+  font-size: clamp(2rem, 12vw, 3rem);
+  text-transform: uppercase;
+  width: min-content;
+}
+
+.Header__button {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  color: var(--white);
+  display: block;
+  padding: var(--space-m) var(--space-m);
+  text-align: center;
+  text-decoration: none;
+}
+
+.Header__buttonText {
+  font-weight: bold;
+}
+
+.Header_sticky {
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  padding: var(--space-s);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: opacity 0.7s ease-out;
+
+  &.is-show {
+    opacity: 1;
+  }
+}
+
+.Header__logo {
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  width: min-content;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

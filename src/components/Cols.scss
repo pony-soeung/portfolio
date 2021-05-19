@@ -1,0 +1,27 @@
+.App-header {
+  text-align: center;
+}
+
+.cpt__list {
+  align-items: flex-end;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.cpt__item {
+  background-color: #0089cd;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 8px;
+  transition: all 0.25s ease-in-out;
+  transition-property: background-color, height;
+  width: 20px;
+}
+
+.cpt__item--current {
+  background-color: transparent;
+  border: 1px solid #0089cd;
+}
